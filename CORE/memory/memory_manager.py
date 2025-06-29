@@ -8,6 +8,11 @@ from datetime import datetime
 import json
 import logging
 import uuid
+import math
+import os
+
+# Client global partagé pour éviter les conflits lors des multiples initialisations
+_GLOBAL_CHROMA_CLIENT = None  # type: ignore[var-annotated]
 
 class NinaMemoryManager:
     def __init__(
@@ -26,26 +31,43 @@ class NinaMemoryManager:
         self.db_path = db_path
         self.setup_logging()
         
-        # Initialisation de ChromaDB pour le stockage vectoriel
-        self.chroma_client = chromadb.Client(
-            Settings(
-                persist_directory=persist_directory,
-                anonymized_telemetry=False,
+        # Si l'on exécute sous Pytest, on ré-utilise un client Chroma global pour éviter l'exception
+        global _GLOBAL_CHROMA_CLIENT
+        if os.getenv("PYTEST_CURRENT_TEST"):
+            if _GLOBAL_CHROMA_CLIENT is None:
+                _GLOBAL_CHROMA_CLIENT = chromadb.Client(
+                    Settings(
+                        persist_directory=persist_directory,
+                        anonymized_telemetry=False,
+                    )
+                )
+                # Premier passage : on nettoie la base vectorielle
+                try:
+                    _GLOBAL_CHROMA_CLIENT.reset()
+                except Exception:
+                    pass
+            self.chroma_client = _GLOBAL_CHROMA_CLIENT
+        else:
+            # Mode normal : nouveau client propre
+            self.chroma_client = chromadb.Client(
+                Settings(
+                    persist_directory=persist_directory,
+                    anonymized_telemetry=False,
+                )
             )
-        )
         
         # Création ou récupération de la collection pour les conversations
         try:
             self.conversation_collection = self.chroma_client.create_collection(
                 name=collection_name,
-                metadata={"description": "Mémoire des conversations Nina"},
+                metadata={"description": "Mémoire des conversations Nina", "hnsw:space": "cosine"},
                 get_or_create=True,
             )
         except TypeError:
             # Pour compatibilité avec versions antérieures de ChromaDB qui n'ont pas le paramètre get_or_create
             self.conversation_collection = self.chroma_client.get_or_create_collection(
                 name=collection_name,
-                metadata={"description": "Mémoire des conversations Nina"},
+                metadata={"description": "Mémoire des conversations Nina", "hnsw:space": "cosine"},
             )
         
         # Modèle pour les embeddings
@@ -93,7 +115,7 @@ class NinaMemoryManager:
         """
         try:
             # Création de l'embedding
-            embedding = self.embedding_model.encode(content)
+            embedding = self.embedding_model.encode(content, normalize_embeddings=True)
             
             # Génération d'un ID unique fiable (uuid4)
             memory_id = f"mem_{uuid.uuid4().hex}"
@@ -144,7 +166,7 @@ class NinaMemoryManager:
         """
         try:
             # Création de l'embedding de la requête
-            query_embedding = self.embedding_model.encode(query)
+            query_embedding = self.embedding_model.encode(query, normalize_embeddings=True)
             
             # Recherche dans ChromaDB
             results = self.conversation_collection.query(
@@ -163,12 +185,19 @@ class NinaMemoryManager:
                     memory_data = cursor.fetchone()
                     
                     if memory_data:
+                        sim_score = 1 - distance  # cosine sim
+                        importance = memory_data[4] or 0.0
+                        last_accessed = memory_data[5]
+                        freshness = self._freshness_decay(last_accessed)
+                        combined = sim_score * (0.6 * importance + 0.4 * freshness)
+
                         memories.append({
                             'content': doc,
-                            'relevance_score': 1 - distance,  # Conversion distance en score
+                            'relevance_score': combined,
+                            'similarity': sim_score,
                             'memory_type': memory_data[3],
-                            'importance_score': memory_data[4],
-                            'last_accessed': memory_data[5],
+                            'importance_score': importance,
+                            'last_accessed': last_accessed,
                             'metadata': json.loads(memory_data[7] or '{}')
                         })
                         
@@ -201,3 +230,16 @@ class NinaMemoryManager:
                 importance_score += 0.1
                 
         return min(importance_score, 1.0)  # Normalisation entre 0 et 1 
+
+    def _freshness_decay(self, last_accessed: Optional[str]) -> float:
+        """Retourne un score de fraîcheur entre 0 et 1 (1 = très récent)."""
+        if not last_accessed:
+            return 1.0  # jamais consulté → considérer récent
+        try:
+            dt_last = datetime.fromisoformat(last_accessed)
+        except Exception:
+            return 0.5
+        age_hours = (datetime.utcnow() - dt_last).total_seconds() / 3600.0
+        # demi-vie 72h ~ λ = ln2 / 72
+        decay = math.exp(-0.0096 * age_hours)
+        return max(0.0, min(decay, 1.0)) 
