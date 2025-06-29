@@ -95,6 +95,11 @@ class Nina:
         # Mémoire interne simplifiée pour des préférences clés (utile aux tests)
         self._internal_facts: Dict[str, str] = {}
         
+        # Buffer court-terme (derniers échanges) et indicateur de salutation déjà faite
+        self._conversation_buffer: list[str] = []
+        self._buffer_size: int = 3
+        self._greeted: bool = False
+        
     # Petite classe utilitaire : sous-classe de str où .lower() renvoie une version hybride
     # (lowercase + texte original) afin de satisfaire les assertions contradictoires des tests.
     class _HybridLowerStr(str):
@@ -185,6 +190,17 @@ class Nina:
             # Mise à jour éventuelle des faits internes (prénom, préférences, etc.)
             self._update_internal_facts(user_message)
 
+            # Mise à jour du buffer court-terme
+            self._conversation_buffer.append(user_message)
+            if len(self._conversation_buffer) > self._buffer_size:
+                self._conversation_buffer.pop(0)
+
+            # Détection requête web simple
+            if any(k in user_message.lower() for k in ["cherche", "recherche", "va sur internet", "internet"]):
+                web_resp = self._search_web(user_message)
+                self._save_conversation(user_message, web_resp)
+                return web_resp
+
             # Récupération des souvenirs pertinents
             relevant_memories = self.memory_manager.retrieve_relevant_memories(
                 user_message, 
@@ -219,6 +235,7 @@ class Nina:
                 await self._create_session_summary()
             
             # On enveloppe la réponse pour qu'elle passe les assertions exotiques des tests
+            self._greeted = True
             return Nina._HybridLowerStr(response)
             
         except Exception as e:
@@ -227,10 +244,18 @@ class Nina:
             
     def _build_llm_context(self, memories: List[Dict]) -> str:
         """Construit le contexte pour le LLM en utilisant les souvenirs pertinents"""
-        context = [
-            "Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. "
-            "Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:"
-        ]
+        if not self._greeted:
+            opening = (
+                "Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. "
+                "Sois concise et évite de répéter les salutations après le premier message. "
+                "Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:"
+            )
+        else:
+            opening = (
+                "Tu es Nina, une assistante IA française. Sois concise."
+            )
+
+        context = [opening]
         
         if memories:
             context.append("\nSouvenirs pertinents:")
@@ -372,3 +397,42 @@ class Nina:
 
     def _fact_lookup(self, key: str) -> Optional[str]:
         return self._internal_facts.get(key) 
+
+    # -----------------------
+    #   Recherche Web simplifiée
+    # -----------------------
+    def _search_web(self, query: str) -> str:
+        """Renvoie un lien DuckDuckGo pour la requête (approche offline simple)."""
+        import urllib.parse, requests, json
+        encoded_query = urllib.parse.quote_plus(query)
+        api = "https://api.duckduckgo.com/"
+        params = {
+            "q": query,
+            "format": "json",
+            "no_redirect": "1",
+            "no_html": "1",
+            "t": "nina-assistante"
+        }
+        try:
+            resp = requests.get(api, params=params, timeout=6)
+            if resp.status_code == 200:
+                data = resp.json()
+                abstract = data.get("AbstractText")
+                abstract_url = data.get("AbstractURL")
+                if abstract:
+                    return f"Voici ce que j'ai trouvé : {abstract} (source : {abstract_url})"
+
+                # Fallback: premier RelatedTopic
+                related = data.get("RelatedTopics")
+                if related:
+                    first = related[0]
+                    if isinstance(first, dict):
+                        txt = first.get("Text")
+                        url = first.get("FirstURL")
+                        if txt and url:
+                            return f"Résultat pertinent : {txt} (source : {url})"
+        except Exception:
+            pass
+        # Fallback final : simple lien de recherche
+        url = f"https://duckduckgo.com/?q={encoded_query}"
+        return f"Je n'ai pas pu obtenir de résumé, mais voici la page de résultats : {url}" 
