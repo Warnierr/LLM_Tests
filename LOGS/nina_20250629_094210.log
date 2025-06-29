@@ -1,0 +1,15 @@
+2025-06-29 09:42:10,706 - NinaMain - INFO - Démarrage de Nina...
+2025-06-29 09:42:10,706 - NinaMain - DEBUG - Chargement du fichier .env...
+2025-06-29 09:42:10,706 - NinaMain - DEBUG - Vérification de la clé API...
+2025-06-29 09:42:10,707 - NinaMain - ERROR - Erreur critique: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-06-29 09:42:10,708 - NinaMain - DEBUG - Traceback: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Projets\Nina Final\start_nina.py", line 46, in main
+    nina = Nina()
+  File "C:\Users\User\Desktop\Projets\Nina Final\CORE\nina_main.py", line 23, in __init__
+    self.groq_client = Groq(api_key=os.getenv('GROQ_API_KEY'))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_client.py", line 95, in __init__
+    super().__init__(
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 795, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+

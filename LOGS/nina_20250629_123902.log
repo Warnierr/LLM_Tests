@@ -1,0 +1,799 @@
+2025-06-29 12:39:02,977 - NinaMain - DEBUG - Fichier .env chargé depuis : C:\Users\User\Desktop\Projets\Nina Final\.env
+2025-06-29 12:39:03,075 - chromadb.config - DEBUG - Starting component System
+2025-06-29 12:39:03,075 - chromadb.config - DEBUG - Starting component Posthog
+2025-06-29 12:39:03,075 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-06-29 12:39:03,075 - chromadb.config - DEBUG - Starting component SimpleAssignmentPolicy
+2025-06-29 12:39:03,075 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-06-29 12:39:03,078 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-06-29 12:39:03,080 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-06-29 12:39:03,098 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-mpnet-base-v2
+2025-06-29 12:39:03,101 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-29 12:39:03,260 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-06-29 12:39:03,265 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/modules.json HTTP/1.1" 200 0
+2025-06-29 12:39:03,364 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-06-29 12:39:03,371 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-06-29 12:39:03,466 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-06-29 12:39:03,471 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/README.md HTTP/1.1" 200 0
+2025-06-29 12:39:03,568 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-06-29 12:39:03,574 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/modules.json HTTP/1.1" 200 0
+2025-06-29 12:39:03,673 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-06-29 12:39:03,679 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-06-29 12:39:03,774 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-06-29 12:39:03,779 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/config.json HTTP/1.1" 200 0
+2025-06-29 12:39:05,380 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-06-29 12:39:05,385 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/84fccfe766bcfd679e39efefe4ebf45af190ad2d/tokenizer_config.json HTTP/1.1" 200 0
+2025-06-29 12:39:05,484 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-06-29 12:39:06,371 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/revision/main HTTP/1.1" 200 6331
+2025-06-29 12:39:06,374 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-29 12:39:06,376 - NinaMain - INFO - Nina initialisée avec succès
+2025-06-29 12:39:10,009 - chromadb.config - DEBUG - Starting component LocalHnswSegment
+2025-06-29 12:39:10,063 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-ca069f14-1a8e-40af-90e4-0a4a679c1347', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Salut'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:39:10,063 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:39:10,067 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:39:10,086 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56EBC0>
+2025-06-29 12:39:10,086 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:39:10,096 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56D6F0>
+2025-06-29 12:39:10,096 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:10,096 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:39:10,096 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:39:10,096 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:39:10,096 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:10,343 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:39:10 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5933'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'670ms'), (b'x-request-id', b'req_01jyxm9z2zfj3v1j674715zr9y'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=35qjIAAUZxcDNGyEAomHG62WxCkYyLDFzKS_bIaIacg-1751193550-1.0.1.1-rAaEBoTuflYx2AcUyIq_shjgLoNnfdEzaaydLf8BPgX2xoWe20g5tCgtXGjDq2kJheO.nvcU5q8wFEiLTz1uIhgnP9Sfuov7PY7mS2.851E; path=/; expires=Sun, 29-Jun-25 11:09:10 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cc66ed8ed39b-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:39:10,343 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:39:10,343 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:39:10,343 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:39:10,345 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:39:10,345 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:39:10,345 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:39:10 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5933', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '670ms', 'x-request-id': 'req_01jyxm9z2zfj3v1j674715zr9y', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=35qjIAAUZxcDNGyEAomHG62WxCkYyLDFzKS_bIaIacg-1751193550-1.0.1.1-rAaEBoTuflYx2AcUyIq_shjgLoNnfdEzaaydLf8BPgX2xoWe20g5tCgtXGjDq2kJheO.nvcU5q8wFEiLTz1uIhgnP9Sfuov7PY7mS2.851E; path=/; expires=Sun, 29-Jun-25 11:09:10 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '9574cc66ed8ed39b-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:39:10,494 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 10
+2025-06-29 12:39:18,027 - chromadb.segment.impl.vector.local_hnsw - WARNING - Number of requested results 5 is greater than number of elements in index 1, updating n_results = 1
+2025-06-29 12:39:18,034 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4cebc8e2-1f18-4578-a0e5-ee4c158fb859', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Te rappelles tu de moi ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:39:18,034 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:39:18,035 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:39:18,035 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:39:18,035 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:39:18,040 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C94760>
+2025-06-29 12:39:18,040 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:39:18,049 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFEBC0>
+2025-06-29 12:39:18,049 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:18,050 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:39:18,050 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:39:18,050 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:39:18,050 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:18,366 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:39:18 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5928'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'720ms'), (b'x-request-id', b'req_01jyxma6vrfj5v48hnzgfm933j'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cc989e95d57c-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:39:18,366 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:39:18,366 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:39:18,367 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:39:18,367 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:39:18,367 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:39:18,367 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:39:18 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5928', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '720ms', 'x-request-id': 'req_01jyxma6vrfj5v48hnzgfm933j', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cc989e95d57c-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:39:18,537 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 11
+2025-06-29 12:39:26,060 - chromadb.segment.impl.vector.local_hnsw - WARNING - Number of requested results 5 is greater than number of elements in index 2, updating n_results = 2
+2025-06-29 12:39:26,070 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-171fa012-0ae6-4520-9383-d7d968699228', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Mon nom est Raouf'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:39:26,072 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:39:26,072 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:39:26,072 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:39:26,072 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:39:26,077 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFDF90>
+2025-06-29 12:39:26,077 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:39:26,084 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFFD30>
+2025-06-29 12:39:26,084 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:26,084 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:39:26,084 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:39:26,084 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:39:26,084 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:26,347 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:39:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5930'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'700ms'), (b'x-request-id', b'req_01jyxmaepgfj6sz4s5dv4fvzrx'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cccacb04eba6-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:39:26,348 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:39:26,348 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:39:26,348 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:39:26,348 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:39:26,348 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:39:26,348 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:39:26 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5930', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '700ms', 'x-request-id': 'req_01jyxmaepgfj6sz4s5dv4fvzrx', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cccacb04eba6-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:39:26,501 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 12
+2025-06-29 12:39:33,893 - chromadb.segment.impl.vector.local_hnsw - WARNING - Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+2025-06-29 12:39:33,906 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-f5182e49-ed16-4157-ab93-c99c2f1d0d18', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Quel est mon nom ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:39:33,907 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:39:33,907 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:39:33,907 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:39:33,907 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:39:33,911 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56E0E0>
+2025-06-29 12:39:33,911 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:39:33,921 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56DB10>
+2025-06-29 12:39:33,921 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:33,922 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:39:33,922 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:39:33,922 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:39:33,922 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:34,203 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:39:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5930'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'700ms'), (b'x-request-id', b'req_01jyxmapbjfj7vwnk782z5wd5d'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574ccfbce11d400-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:39:34,203 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:39:34,203 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:39:34,203 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:39:34,203 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:39:34,203 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:39:34,204 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:39:34 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5930', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '700ms', 'x-request-id': 'req_01jyxmapbjfj7vwnk782z5wd5d', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574ccfbce11d400-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:39:34,398 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 13
+2025-06-29 12:39:53,542 - chromadb.segment.impl.vector.local_hnsw - WARNING - Number of requested results 5 is greater than number of elements in index 4, updating n_results = 4
+2025-06-29 12:39:53,559 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-d21c2d3c-4251-48fb-8565-cc7a64bb9ff0', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Raouf'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:39:53,560 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:39:53,560 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:39:53,561 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:39:53,561 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:39:53,577 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C95270>
+2025-06-29 12:39:53,577 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:39:53,585 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C95570>
+2025-06-29 12:39:53,586 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:53,586 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:39:53,586 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:39:53,586 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:39:53,586 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:39:53,866 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:39:53 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5933'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'670ms'), (b'x-request-id', b'req_01jyxmb9jeede8pss2ywr8n0gs'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cd76af586fb7-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:39:53,866 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:39:53,866 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:39:53,866 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:39:53,866 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:39:53,866 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:39:53,867 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:39:53 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5933', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '670ms', 'x-request-id': 'req_01jyxmb9jeede8pss2ywr8n0gs', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cd76af586fb7-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:39:54,062 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 14
+2025-06-29 12:40:00,700 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-8c76e321-1447-4482-82ba-7bea7bf6d276', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Retiens Raouf'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:40:00,701 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:40:00,701 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:40:00,701 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:40:00,701 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:40:00,710 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C97A60>
+2025-06-29 12:40:00,710 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:40:00,718 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C97250>
+2025-06-29 12:40:00,718 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:00,718 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:40:00,718 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:40:00,718 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:40:00,719 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:01,044 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:40:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5931'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'690ms'), (b'x-request-id', b'req_01jyxmbgh3edgbkswdx8qq1j61'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cda34cc3d118-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:40:01,044 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:40:01,044 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:40:01,044 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:40:01,044 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:40:01,044 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:40:01,044 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:40:00 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5931', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '690ms', 'x-request-id': 'req_01jyxmbgh3edgbkswdx8qq1j61', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cda34cc3d118-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:40:01,217 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 15
+2025-06-29 12:40:12,963 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-40183eda-0318-43e7-86cb-1a7c886d76a0', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Que sais-tu faire ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:40:12,964 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:40:12,964 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:40:12,965 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:40:12,965 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:40:12,980 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9D600>
+2025-06-29 12:40:12,980 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:40:12,988 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9D7B0>
+2025-06-29 12:40:12,989 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:12,989 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:40:12,989 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:40:12,989 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:40:12,989 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:13,614 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:40:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5930'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'700ms'), (b'x-request-id', b'req_01jyxmbwgcfwmathn5h3nz2drw'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cdeffc546f3a-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:40:13,614 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:40:13,614 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:40:13,614 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:40:13,614 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:40:13,614 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:40:13,614 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:40:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5930', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '700ms', 'x-request-id': 'req_01jyxmbwgcfwmathn5h3nz2drw', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cdeffc546f3a-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:40:13,785 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 16
+2025-06-29 12:40:27,008 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-32bc40b6-8609-41f7-a54e-163204d55635', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'comment dire bonjour ça va en italien ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:40:27,009 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:40:27,009 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:40:27,009 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:40:27,009 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:40:27,014 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C945B0>
+2025-06-29 12:40:27,014 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:40:27,025 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56D1B0>
+2025-06-29 12:40:27,026 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:27,026 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:40:27,026 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:40:27,026 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:40:27,026 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:27,474 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:40:27 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5924'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'760ms'), (b'x-request-id', b'req_01jyxmca7nfjvasaqd7gmdz9kf'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574ce47a9a9c0a4-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:40:27,474 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:40:27,474 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:40:27,474 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:40:27,474 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:40:27,475 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:40:27,475 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:40:27 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5924', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '760ms', 'x-request-id': 'req_01jyxmca7nfjvasaqd7gmdz9kf', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574ce47a9a9c0a4-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:40:27,652 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 17
+2025-06-29 12:40:44,388 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-da280f09-c0a0-4874-8ca0-fb921208ad60', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': "Sais tu aller sur les agents ia que je t'ai donné ?"}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:40:44,389 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:40:44,389 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:40:44,390 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:40:44,390 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:40:44,394 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C96C80>
+2025-06-29 12:40:44,394 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:40:44,400 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C96980>
+2025-06-29 12:40:44,400 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:44,400 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:40:44,400 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:40:44,400 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:40:44,400 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:44,714 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:40:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5921'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'790ms'), (b'x-request-id', b'req_01jyxmcv5xedy9ymp225197zky'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574ceb44ed6d128-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:40:44,714 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:40:44,714 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:40:44,715 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:40:44,715 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:40:44,715 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:40:44,715 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:40:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5921', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '790ms', 'x-request-id': 'req_01jyxmcv5xedy9ymp225197zky', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574ceb44ed6d128-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:40:44,887 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 18
+2025-06-29 12:40:53,138 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-5e8efd2c-cc97-42da-adcb-fbbf0751a798', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu aller sur internet?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:40:53,139 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:40:53,139 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:40:53,139 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:40:53,139 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:40:53,153 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C95AE0>
+2025-06-29 12:40:53,153 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:40:53,162 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C962F0>
+2025-06-29 12:40:53,163 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:53,163 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:40:53,163 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:40:53,163 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:40:53,163 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:40:53,446 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:40:53 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5928'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'720ms'), (b'x-request-id', b'req_01jyxmd3qwee39yv4ppwrdmgek'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574ceeb0c059e66-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:40:53,447 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:40:53,447 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:40:53,447 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:40:53,447 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:40:53,447 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:40:53,447 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:40:53 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5928', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '720ms', 'x-request-id': 'req_01jyxmd3qwee39yv4ppwrdmgek', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574ceeb0c059e66-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:40:53,592 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 19
+2025-06-29 12:41:08,489 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-323a7709-705d-48bd-8399-119f7408c282', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Ok va me recuperer la recette des tartes, et donne aussi le lien url'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:41:08,489 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:41:08,490 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:41:08,490 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:41:08,490 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:41:08,531 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFFAC0>
+2025-06-29 12:41:08,531 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:41:08,538 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFFD60>
+2025-06-29 12:41:08,538 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:08,538 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:41:08,538 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:41:08,538 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:41:08,538 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:09,344 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:41:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5917'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'830ms'), (b'x-request-id', b'req_01jyxmdjrgfkc9sp9m5g7cyevk'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cf4b2ad3da7c-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:41:09,344 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:41:09,344 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:41:09,344 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:41:09,344 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:41:09,344 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:41:09,344 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:41:09 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5917', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '830ms', 'x-request-id': 'req_01jyxmdjrgfkc9sp9m5g7cyevk', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cf4b2ad3da7c-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:41:09,514 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 20
+2025-06-29 12:41:32,115 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-987af1e3-b139-4162-a7d7-3975dad6da83', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'super 1+1'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:41:32,117 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:41:32,117 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:41:32,117 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:41:32,117 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:41:32,133 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9F4C0>
+2025-06-29 12:41:32,133 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:41:32,140 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9F640>
+2025-06-29 12:41:32,140 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:32,141 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:41:32,141 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:41:32,141 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:41:32,141 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:32,342 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:41:32 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5932'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'680ms'), (b'x-request-id', b'req_01jyxme9syfknrdnh1ah7rfehn'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cfdeaf14017f-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:41:32,342 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:41:32,342 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:41:32,343 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:41:32,343 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:41:32,343 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:41:32,343 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:41:32 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5932', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '680ms', 'x-request-id': 'req_01jyxme9syfknrdnh1ah7rfehn', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cfdeaf14017f-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:41:32,441 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 21
+2025-06-29 12:41:36,711 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-23a816e6-d18a-4572-a69d-ca5e6ea64095', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'top'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:41:36,711 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:41:36,712 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:36,712 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:41:36,712 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:41:36,712 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:41:36,712 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:37,002 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:41:36 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'5934'), (b'x-ratelimit-reset-requests', b'7.414s'), (b'x-ratelimit-reset-tokens', b'660ms'), (b'x-request-id', b'req_01jyxmee99fkrbqhhw7y01cqve'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574cffb3b7d017f-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:41:37,002 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:41:37,002 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:41:37,002 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:41:37,003 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:41:37,003 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:41:37,003 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:41:36 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '5934', 'x-ratelimit-reset-requests': '7.414s', 'x-ratelimit-reset-tokens': '660ms', 'x-request-id': 'req_01jyxmee99fkrbqhhw7y01cqve', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574cffb3b7d017f-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:41:37,163 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 22
+2025-06-29 12:41:40,663 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-619cfa1f-2ec4-4c24-bad0-0fe49bbe4e02', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'quel est mon nom ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:41:40,665 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:41:40,666 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:40,666 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:41:40,666 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:41:40,666 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:41:40,666 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:40,892 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:41:40 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14397'), (b'x-ratelimit-remaining-tokens', b'5930'), (b'x-ratelimit-reset-requests', b'14.064999999s'), (b'x-ratelimit-reset-tokens', b'700ms'), (b'x-request-id', b'req_01jyxmej48fxrr5w4zcds95829'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d013ebf4017f-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:41:40,892 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:41:40,892 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:41:40,892 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:41:40,892 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:41:40,892 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:41:40,892 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:41:40 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14397', 'x-ratelimit-remaining-tokens': '5930', 'x-ratelimit-reset-requests': '14.064999999s', 'x-ratelimit-reset-tokens': '700ms', 'x-request-id': 'req_01jyxmej48fxrr5w4zcds95829', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d013ebf4017f-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:41:41,044 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 23
+2025-06-29 12:41:50,356 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-cc283f64-0196-4eda-b1f4-1c0d6132583e', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': "et le miens ? je m'appelle comment ?"}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:41:50,357 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:41:50,357 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:41:50,357 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:41:50,357 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:41:50,361 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9F3A0>
+2025-06-29 12:41:50,361 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:41:50,371 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9CF40>
+2025-06-29 12:41:50,371 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:50,371 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:41:50,371 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:41:50,371 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:41:50,371 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:41:50,665 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:41:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14397'), (b'x-ratelimit-remaining-tokens', b'5925'), (b'x-ratelimit-reset-requests', b'14.288999999s'), (b'x-ratelimit-reset-tokens', b'750ms'), (b'x-request-id', b'req_01jyxmevksfkwvv8tefy6wcwa6'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d0509c940498-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:41:50,665 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:41:50,665 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:41:50,665 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:41:50,665 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:41:50,665 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:41:50,665 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:41:50 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14397', 'x-ratelimit-remaining-tokens': '5925', 'x-ratelimit-reset-requests': '14.288999999s', 'x-ratelimit-reset-tokens': '750ms', 'x-request-id': 'req_01jyxmevksfkwvv8tefy6wcwa6', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d0509c940498-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:41:50,856 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 24
+2025-06-29 12:42:01,436 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7057196e-a02a-403d-aa63-95f74af1d5e2', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Super à la prochaine'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:01,436 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:01,436 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:42:01,436 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:42:01,436 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:42:01,442 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFD6F0>
+2025-06-29 12:42:01,442 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:42:01,449 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFE860>
+2025-06-29 12:42:01,449 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:01,449 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:01,449 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:01,449 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:01,449 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:01,712 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:42:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14397'), (b'x-ratelimit-remaining-tokens', b'5929'), (b'x-ratelimit-reset-requests', b'12.921s'), (b'x-ratelimit-reset-tokens', b'710ms'), (b'x-request-id', b'req_01jyxmf6e1fm0rd2byy08w7cfg'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d095dbcdd646-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:01,712 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:42:01,712 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:01,712 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:01,712 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:01,713 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:01,713 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:42:01 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14397', 'x-ratelimit-remaining-tokens': '5929', 'x-ratelimit-reset-requests': '12.921s', 'x-ratelimit-reset-tokens': '710ms', 'x-request-id': 'req_01jyxmf6e1fm0rd2byy08w7cfg', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d095dbcdd646-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:01,855 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 25
+2025-06-29 12:42:08,599 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-08a95446-1877-4383-a34d-00f154ca5b25', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'Sais tu ecrire du code python?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:08,599 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:08,600 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:42:08,600 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:42:08,600 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:42:08,604 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C960E0>
+2025-06-29 12:42:08,604 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:42:08,612 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C958D0>
+2025-06-29 12:42:08,612 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:08,613 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:08,613 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:08,613 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:08,613 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:09,056 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:42:08 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14397'), (b'x-ratelimit-remaining-tokens', b'5927'), (b'x-ratelimit-reset-requests', b'16.848s'), (b'x-ratelimit-reset-tokens', b'730ms'), (b'x-request-id', b'req_01jyxmfddhef5r9rq9kr6jh0nx'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d0c29c91f18c-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:09,056 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:42:09,056 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:09,056 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:09,056 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:09,056 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:09,056 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:42:08 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14397', 'x-ratelimit-remaining-tokens': '5927', 'x-ratelimit-reset-requests': '16.848s', 'x-ratelimit-reset-tokens': '730ms', 'x-request-id': 'req_01jyxmfddhef5r9rq9kr6jh0nx', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d0c29c91f18c-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:09,232 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 26
+2025-06-29 12:42:19,246 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-5a6b7a1f-7f43-4604-8b95-0b729429a671', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'fais moi une fonction print en python'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:19,247 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:19,247 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:42:19,247 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:42:19,247 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:42:19,251 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C96620>
+2025-06-29 12:42:19,251 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:42:19,258 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C94FA0>
+2025-06-29 12:42:19,258 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:19,259 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:19,259 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:19,259 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:19,259 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:19,517 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:42:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14397'), (b'x-ratelimit-remaining-tokens', b'5925'), (b'x-ratelimit-reset-requests', b'13.343s'), (b'x-ratelimit-reset-tokens', b'750ms'), (b'x-request-id', b'req_01jyxmfqtjfm8avtrw6073k2jh'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1052a2c04a4-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:19,517 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:42:19,518 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:19,518 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:19,518 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:19,518 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:19,518 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:42:19 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14397', 'x-ratelimit-remaining-tokens': '5925', 'x-ratelimit-reset-requests': '13.343s', 'x-ratelimit-reset-tokens': '750ms', 'x-request-id': 'req_01jyxmfqtjfm8avtrw6073k2jh', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1052a2c04a4-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:19,710 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 27
+2025-06-29 12:42:26,168 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-02f80b9c-a67f-4b47-a733-31aa09a7c83a', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:26,168 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:26,169 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:42:26,169 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:42:26,169 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:42:26,173 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56D5A0>
+2025-06-29 12:42:26,173 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:42:26,181 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D52E56F220>
+2025-06-29 12:42:26,181 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:26,182 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:26,182 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:26,182 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:26,182 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:26,324 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:26 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1306a206f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:26,325 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:26,325 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:26,325 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:26,325 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:26,325 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:26,326 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:26 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1306a206f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:26,326 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:26,327 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:26,327 - groq._base_client - DEBUG - 2 retries left
+2025-06-29 12:42:26,327 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.481458 seconds
+2025-06-29 12:42:26,809 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-02f80b9c-a67f-4b47-a733-31aa09a7c83a', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:26,809 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:26,810 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:26,810 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:26,810 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:26,810 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:26,810 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:26,942 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:26 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1345d566f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:26,942 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:26,942 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:26,943 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:26,943 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:26,943 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:26,943 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:26 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1345d566f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:26,943 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:26,943 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:26,943 - groq._base_client - DEBUG - 1 retry left
+2025-06-29 12:42:26,943 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.974701 seconds
+2025-06-29 12:42:27,918 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-02f80b9c-a67f-4b47-a733-31aa09a7c83a', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:27,918 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:27,919 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:27,919 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:27,919 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:27,920 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:27,920 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:28,057 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:27 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d13b4ba96f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:28,057 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:28,057 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:28,057 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:28,057 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:28,057 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:28,057 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:27 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d13b4ba96f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:28,057 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:28,057 - groq._base_client - DEBUG - Re-raising status error
+2025-06-29 12:42:28,057 - Nina - ERROR - Erreur lors de l'appel au LLM: no healthy upstream
+2025-06-29 12:42:29,059 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1b7db787-6a00-4244-91d4-c939708daf4c', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:29,060 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:29,060 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:29,060 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:29,061 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:29,061 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:29,061 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:29,192 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:28 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d14269ae6f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:29,192 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:29,192 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:29,192 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:29,192 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:29,192 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:29,192 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:28 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d14269ae6f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:29,192 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:29,193 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:29,193 - groq._base_client - DEBUG - 2 retries left
+2025-06-29 12:42:29,193 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.409651 seconds
+2025-06-29 12:42:29,603 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1b7db787-6a00-4244-91d4-c939708daf4c', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:29,603 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:29,604 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:29,604 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:29,604 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:29,604 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:29,604 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:29,735 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:29 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d145cc966f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:29,736 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:29,736 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:29,736 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:29,736 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:29,736 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:29,736 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:29 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d145cc966f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:29,736 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:29,737 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:29,737 - groq._base_client - DEBUG - 1 retry left
+2025-06-29 12:42:29,737 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.859770 seconds
+2025-06-29 12:42:30,597 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1b7db787-6a00-4244-91d4-c939708daf4c', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:30,597 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:30,598 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:30,598 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:30,598 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:30,598 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:30,598 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:30,729 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:30 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d14bfaa76f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:30,729 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:30,729 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:30,729 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:30,729 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:30,729 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:30,730 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:30 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d14bfaa76f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:30,730 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:30,730 - groq._base_client - DEBUG - Re-raising status error
+2025-06-29 12:42:30,730 - Nina - ERROR - Erreur lors de l'appel au LLM: no healthy upstream
+2025-06-29 12:42:32,731 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7c781e2d-bbbf-458a-8c23-5daba314924f', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:32,731 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:32,732 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:32,732 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:32,732 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:32,732 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:32,732 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:32,884 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:32 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1595dd56f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:32,885 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:32,885 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:32,885 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:32,885 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:32,885 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:32,885 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:32 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1595dd56f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:32,885 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:32,885 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:32,885 - groq._base_client - DEBUG - 2 retries left
+2025-06-29 12:42:32,885 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.386695 seconds
+2025-06-29 12:42:33,273 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7c781e2d-bbbf-458a-8c23-5daba314924f', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:33,273 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:33,274 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:33,274 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:33,274 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:33,274 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:33,274 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:33,403 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:33 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d15cb8d36f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:33,403 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:33,403 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:33,403 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:33,404 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:33,404 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:33,404 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:33 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d15cb8d36f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:33,404 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:33,404 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:33,404 - groq._base_client - DEBUG - 1 retry left
+2025-06-29 12:42:33,404 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.952002 seconds
+2025-06-29 12:42:34,358 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7c781e2d-bbbf-458a-8c23-5daba314924f', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:34,358 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:34,359 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:34,359 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:34,359 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:34,359 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:34,359 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:34,492 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:34 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1637e136f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:34,492 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:34,492 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:34,492 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:34,492 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:34,492 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:34,492 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:34 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1637e136f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:34,493 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:34,493 - groq._base_client - DEBUG - Re-raising status error
+2025-06-29 12:42:34,493 - Nina - ERROR - Erreur lors de l'appel au LLM: no healthy upstream
+2025-06-29 12:42:34,493 - Nina - ERROR - Erreur lors du traitement du message: RetryError[<Future at 0x1d52e56d780 state=finished raised InternalServerError>]
+2025-06-29 12:42:37,105 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-dfec23fa-7aed-46f4-b43c-6d7c6f00d3f9', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:37,105 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:37,106 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:37,107 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:37,107 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:37,107 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:37,107 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:37,241 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:37 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d174aea36f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:37,241 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:37,242 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:37,242 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:37,242 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:37,242 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:37,242 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:37 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d174aea36f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:37,242 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:37,242 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:37,242 - groq._base_client - DEBUG - 2 retries left
+2025-06-29 12:42:37,242 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.457637 seconds
+2025-06-29 12:42:37,701 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-dfec23fa-7aed-46f4-b43c-6d7c6f00d3f9', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:37,701 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:37,701 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:37,702 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:37,702 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:37,702 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:37,702 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:37,832 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:37 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d17869b66f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:37,832 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:37,832 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:37,832 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:37,832 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:37,832 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:37,832 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:37 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d17869b66f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:37,832 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:37,833 - groq._base_client - DEBUG - Retrying due to status code 503
+2025-06-29 12:42:37,833 - groq._base_client - DEBUG - 1 retry left
+2025-06-29 12:42:37,833 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.822088 seconds
+2025-06-29 12:42:38,656 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-dfec23fa-7aed-46f4-b43c-6d7c6f00d3f9', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:38,657 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:38,657 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:38,657 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:38,657 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:38,658 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:38,658 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:38,787 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'Date', b'Sun, 29 Jun 2025 10:42:38 GMT'), (b'Content-Type', b'text/plain'), (b'Content-Length', b'19'), (b'Connection', b'keep-alive'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d17e5f326f8e-CDG'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:38,787 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-06-29 12:42:38,787 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:38,788 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:38,788 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:38,788 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:38,788 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "503 Service Unavailable" Headers({'date': 'Sun, 29 Jun 2025 10:42:38 GMT', 'content-type': 'text/plain', 'content-length': '19', 'connection': 'keep-alive', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d17e5f326f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:38,788 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1546, in request
+    response.raise_for_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2025-06-29 12:42:38,788 - groq._base_client - DEBUG - Re-raising status error
+2025-06-29 12:42:38,788 - Nina - ERROR - Erreur lors de l'appel au LLM: no healthy upstream
+2025-06-29 12:42:39,789 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1e41e4a0-467c-476c-b36a-e17db1445a1e', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'sais tu creer un fichier ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:39,789 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:39,790 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:39,790 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:39,790 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:39,790 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:39,790 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:40,087 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:42:39 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5928'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'720ms'), (b'x-request-id', b'req_01jyxmgbvsfyasvsxz4kpy2jcd'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1857e7c6f8e-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:40,087 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:42:40,087 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:40,089 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:40,089 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:40,089 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:40,089 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:42:39 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5928', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '720ms', 'x-request-id': 'req_01jyxmgbvsfyasvsxz4kpy2jcd', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1857e7c6f8e-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:40,257 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 28
+2025-06-29 12:42:51,234 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-481f0dbc-4800-4ec5-a2a8-1926432616d7', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'dans quel dossier peux-tu ecrire ?'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:42:51,235 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:42:51,236 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:42:51,236 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:42:51,236 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:42:51,257 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9C850>
+2025-06-29 12:42:51,257 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:42:51,265 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9C130>
+2025-06-29 12:42:51,265 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:51,265 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:42:51,265 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:42:51,266 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:42:51,266 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:42:51,665 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:42:51 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5926'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'740ms'), (b'x-request-id', b'req_01jyxmgq2cefqsfbf5nrd79wda'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d1cd2a42d5dd-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:42:51,665 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:42:51,665 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:42:51,665 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:42:51,665 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:42:51,666 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:42:51,666 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:42:51 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5926', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '740ms', 'x-request-id': 'req_01jyxmgq2cefqsfbf5nrd79wda', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d1cd2a42d5dd-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:42:51,830 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 29
+2025-06-29 12:43:09,429 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-9bb68a25-6130-452b-847b-6388a634369e', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'creer un fichier txt avec ecris coucou'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:43:09,429 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:43:09,430 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:43:09,430 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:43:09,430 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:43:09,439 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533BFECE0>
+2025-06-29 12:43:09,439 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:43:09,448 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C9FD30>
+2025-06-29 12:43:09,448 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:09,448 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:43:09,448 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:43:09,448 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:43:09,448 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:09,728 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:43:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5925'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'750ms'), (b'x-request-id', b'req_01jyxmh8v8fyxvbd8gvke1p7kp'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d23ec8780496-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:43:09,729 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:43:09,729 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:43:09,729 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:43:09,729 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:43:09,729 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:43:09,729 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:43:09 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5925', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '750ms', 'x-request-id': 'req_01jyxmh8v8fyxvbd8gvke1p7kp', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d23ec8780496-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:43:09,868 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 30
+2025-06-29 12:43:26,460 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-fa91d571-aa1a-49d6-bfef-cf86619a5c1e', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'oui enregistre ce fichier sur mon ordi'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:43:26,461 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:43:26,461 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:43:26,461 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:43:26,461 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:43:26,466 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C94520>
+2025-06-29 12:43:26,466 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:43:26,474 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C95C00>
+2025-06-29 12:43:26,474 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:26,474 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:43:26,474 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:43:26,474 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:43:26,474 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:26,772 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:43:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5925'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'750ms'), (b'x-request-id', b'req_01jyxmhseveg5shxah85q7fh7d'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d2a938169e7b-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:43:26,773 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:43:26,773 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:43:26,773 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:43:26,773 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:43:26,773 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:43:26,773 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:43:26 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5925', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '750ms', 'x-request-id': 'req_01jyxmhseveg5shxah85q7fh7d', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d2a938169e7b-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:43:26,947 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 31
+2025-06-29 12:43:44,220 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-84b47607-d6bb-4fb1-8c93-795a553c28d3', 'json_data': {'messages': [{'role': 'system', 'content': 'Tu es Nina, une assistante IA française intelligente avec une mémoire améliorée. Utilise les informations suivantes de ta mémoire pour personnaliser ta réponse:\n\nAucun souvenir pertinent trouvé pour cette conversation.'}, {'role': 'user', 'content': 'enregistre un fichier txt avec écris coucou dans mon ordinateur'}], 'model': 'llama3-8b-8192', 'max_tokens': 800, 'temperature': 0.7, 'top_p': 0.9}}
+2025-06-29 12:43:44,221 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-06-29 12:43:44,221 - httpcore.connection - DEBUG - close.started
+2025-06-29 12:43:44,221 - httpcore.connection - DEBUG - close.complete
+2025-06-29 12:43:44,221 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-29 12:43:44,230 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C95000>
+2025-06-29 12:43:44,230 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D52A12ECC0> server_hostname='api.groq.com' timeout=5.0
+2025-06-29 12:43:44,239 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D533C96B60>
+2025-06-29 12:43:44,240 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:44,240 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-29 12:43:44,240 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-29 12:43:44,240 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-29 12:43:44,240 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-29 12:43:44,851 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 29 Jun 2025 10:43:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5918'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'820ms'), (b'x-request-id', b'req_01jyxmjaswfzma7vdgaksya62m'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9574d3183f61c702-CDG'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-29 12:43:44,851 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 12:43:44,851 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-29 12:43:44,851 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-29 12:43:44,852 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-29 12:43:44,852 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-29 12:43:44,852 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sun, 29 Jun 2025 10:43:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5918', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '820ms', 'x-request-id': 'req_01jyxmjaswfzma7vdgaksya62m', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9574d3183f61c702-CDG', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-29 12:43:45,025 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 32

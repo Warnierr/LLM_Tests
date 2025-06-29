@@ -1,0 +1,2 @@
+2025-06-29 09:40:39,442 - NinaMain - ERROR - Erreur critique: The api_key client option must be set either by passing api_key to the client or by setting the GROQ_API_KEY environment variable
+2025-06-29 09:40:57,098 - NinaMain - ERROR - Erreur critique: Client.__init__() got an unexpected keyword argument 'proxies'

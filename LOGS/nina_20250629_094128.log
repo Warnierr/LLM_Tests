@@ -1,0 +1,8 @@
+2025-06-29 09:41:28,280 - NinaMain - INFO - Démarrage de Nina...
+2025-06-29 09:41:28,280 - NinaMain - DEBUG - Vérification de la clé API...
+2025-06-29 09:41:28,280 - NinaMain - ERROR - Erreur critique: La clé API GROQ_API_KEY n'est pas définie dans .env
+2025-06-29 09:41:28,280 - NinaMain - DEBUG - Traceback: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Projets\Nina Final\start_nina.py", line 34, in main
+    raise ValueError("La clé API GROQ_API_KEY n'est pas définie dans .env")
+ValueError: La clé API GROQ_API_KEY n'est pas définie dans .env
+

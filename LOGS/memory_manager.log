@@ -1,0 +1,13 @@
+2025-06-29 12:20:00,569 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-mpnet-base-v2
+2025-06-29 12:20:04,145 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-29 12:20:04,217 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 1
+2025-06-29 12:20:04,245 - chromadb.segment.impl.vector.local_hnsw - WARNING - Add of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,246 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,249 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 2
+2025-06-29 12:20:04,279 - chromadb.segment.impl.vector.local_hnsw - WARNING - Add of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,279 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,282 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 3
+2025-06-29 12:20:04,313 - chromadb.segment.impl.vector.local_hnsw - WARNING - Add of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,313 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: mem_20250629_122004
+2025-06-29 12:20:04,316 - NinaMemoryManager - INFO - Nouveau souvenir ajouté: 4
+2025-06-29 12:20:04,343 - chromadb.segment.impl.vector.local_hnsw - WARNING - Number of requested results 5 is greater than number of elements in index 1, updating n_results = 1
